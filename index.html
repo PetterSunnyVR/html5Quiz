@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="utf-8">
+    
+	<title>Project 1: QUIZ</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+	
+    <script src="js/jquery-3.2.0.js"></script>
+	<script src='js/script.js'></script>
+
+
+</head>
+<body>
+    <div id="container-main">
+        <header>
+            <h1> Simple JavaScript Quiz</h1>
+            <p>Test your knowledge in <strong>JS</strong> for fun.</p>
+        </header>
+        <section>
+            <div id="results"></div>
+            <!-- onsubmit catches default event handler for form and changes it to our custom submitAnswer() -->
+            <form name="quizForm" onsubmit="return submitAnswers()" id="form">
+                <h3>1. How to do IIEF?</h3>
+                <input type="radio" name="q1" value="a" id="q1a">a. (function(){..})()<br>
+                <input type="radio" name="q1" value="b" id="q1b">b. var a = function(){..<br>
+                <input type="radio" name="q1" value="c" id="q1c">c. a: function(){..<br>
+                <input type="radio" name="q1" value="d" id="q1d">d. function a(){..<br>
+                
+                <h3>2. How do you call html from js?</h3>
+                <input type="radio" name="q2" value="a" id="q2a">a. html.<br>
+                <input type="radio" name="q2" value="b" id="q2b">b. document.<br>
+                <input type="radio" name="q2" value="c" id="q2c">c. head.<br>
+                <input type="radio" name="q2" value="d" id="q2d">d. body.<br>
+                
+                <h3>3. Which answer is correct?</h3>
+                <input type="radio" name="q3" value="a" id="q3a">a. <br>
+                <input type="radio" name="q3" value="b" id="q3b">b. <br>
+                <input type="radio" name="q3" value="c" id="q3c">c. <br>
+                <input type="radio" name="q3" value="d" id="q3d">d. <br>
+                <br><br>
+                <input type="submit" value="Submit Answers">
+            </form>
+        </section>
+        <footer>
+            <p>Copyrights &copy; 2017, All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+</html>
